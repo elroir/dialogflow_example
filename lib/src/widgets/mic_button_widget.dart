@@ -33,7 +33,8 @@ class _MicWidgetState extends State<MicWidget> {
   bool _hasSpeech = false;
   String intent = '';
   SpeechRecognitionResult result;
-  final dialogflow = DialogflowProvider(fileJson: "assets/taller-call-ddd1a997ca47.json");
+  // Aqui Se pone la ruta del archivo de la cuenta de servicio de Google Cloud
+  final dialogflow = DialogflowProvider(fileJson: "[YOUR_FILE]");
   bool oneTime = false;
 
   @override
